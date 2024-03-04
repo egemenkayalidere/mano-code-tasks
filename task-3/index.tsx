@@ -11,15 +11,15 @@ const CustomButton = ({
   onPress,
   title,
 }: {
-  onPress: () => void,
-  title: string,
+  onPress: () => void;
+  title: string;
 }) => (
   <TouchableOpacity onPress={onPress}>
     <Text style={styles.buttonText}>{title}</Text>
   </TouchableOpacity>
 );
 
-const Input: React.FC<TextInputProps> = (props) => <TextInput {...props} />;
+const Input: React.FC<TextInputProps> = (props) => <Text {...props} />;
 
 const Screen: React.FC<{ navigation: any }> = ({ navigation }) => {
   const [name, setName] = useState("");
